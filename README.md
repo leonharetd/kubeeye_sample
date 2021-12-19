@@ -6,4 +6,4 @@ add function rules
 
 ## regorules
 add opa rules
-opa rules must use go:embed xxx
+>note opa rules must use go:embed xxx
