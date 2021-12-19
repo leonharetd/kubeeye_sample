@@ -6,7 +6,7 @@ import (
 	// "strings"
 	// "path/filepath"
 	// "io/ioutil"
-	"github.com/leonharetd/kubeeye/cmd"
+	"github.com/kubesphere/kubeeye/cmd"
 	kc "github.com/leonharetd/kubeeye_sample/cmd"
 	krr "github.com/leonharetd/kubeeye_sample/regorules"
 	kfr "github.com/leonharetd/kubeeye_sample/funcrules"

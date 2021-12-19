@@ -1,17 +1,18 @@
 package funcrules
 
 import (
+	"context"
 	"fmt"
 	"strconv"
 
-	kube "github.com/leonharetd/kubeeye/pkg/funcrules"
+	kube "github.com/kubesphere/kubeeye/pkg/funcrules"
 )
 
 var _ kube.FuncRule = FuncTestRule{}
 
 type FuncTestRule struct{}
 
-func (cer FuncTestRule) Exec() kube.ValidateResults {
+func (cer FuncTestRule) Exec(ctx context.Context) kube.ValidateResults {
 	output := kube.ValidateResults{ValidateResults: make([]kube.ResultReceiver, 0)}
 	var certExpiresOutput kube.ResultReceiver
 	for i := range []int{1, 2, 3, 4} {

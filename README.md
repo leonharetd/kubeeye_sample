@@ -7,3 +7,7 @@ add function rules
 ## regorules
 add opa rules
 >note opa rules must use go:embed xxx
+## main
+```shell
+go run main.go audit 
+```
